@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Caca Tercinta</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe4e1;
+            color: #333;
+            text-align: center;
+        }
+        #welcome-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffb6c1;
+            padding: 0 10px;
+        }
+        #welcome-screen input {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #ff69b4;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            max-width: 300px;
+        }
+        #welcome-screen button {
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #welcome-screen button:hover {
+            background-color: #ff1493;
+        }
+        #main-content {
+            display: none;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px #ff1493;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 100px 20px 60px;
+        }
+        .romantic-text {
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 1.3em;
+            line-height: 1.8;
+            background: #fff0f5;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+            z-index: 1000;
+        }
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .romantic-text {
+                font-size: 1.1em;
+                padding: 10px;
+            }
+            .gallery {
+                padding: 0 10px;
+            }
+            .gallery img {
+                border-radius: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            header p {
+                font-size: 0.9em;
+            }
+            #welcome-screen input {
+                max-width: 90%;
+            }
+            #welcome-screen button {
+                font-size: 1em;
+            }
+            .romantic-text {
+                font-size: 1em;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>Selamat Datang di Situs Bucin</h1>
+        <p>Masukkan nama lengkapmu dan nama lengkap pacarmu untuk melanjutkan:</p>
+        <input type="text" id="yourName" placeholder="Nama lengkap kamu">
+        <input type="text" id="myName" placeholder="Nama lengkap pacar kamu">
+        <button onclick="validateNames()">Masuk</button>
+        <p id="error-message" style="color: red; display: none;">Nama yang dimasukkan salah. Coba lagi!</p>
+    </div>
+    <div id="main-content">
+        <header>
+            <h1>Happy New Year, Mellora sayangg!!!</h1>
+            <p>(2024: Tahun penuh bucin dan kebahagiaan 🎉❤️)</p>
+        </header>
+        <section>
+            <div class="romantic-text">
+                <p>Dear Sayangku,</p>
+                <p>Selamat Tahun Baru 2024! Makasih banyak udah hadir dalam kehidupankuuu...</p>
+                <p>Ingat gak ketika kamu chat aku buat nyemangatin UTS ku?? "Btw goodluck uts nya". Disitu aku langsung merasa kalau kamu pasti ada sesuatu samaku, dan aku juga merasa kalau kita pasti ada sesuatu... 🧐😆</p>
+                <p>Selama kita bersama, sudah banyak momen dan hal yang telah kita jalanin, baik itu momen bucin, jail, sampai momen paling buruk 😭. Tapi kita bisa melewatinya bersama-sama dan tetap bersama sampai sekarang. 😚</p>
+                <p>Aku sangat bersyukur bisa kenal dan dekat denganmu yang membuatku merasa dicintai dan berpikir ternyata jika bersama orang yang tepat pasti sangat seru dan menyenangkan.</p>
+                <p>Semoga kedepannya kita bisa terus bersama dan bisa melewati semua masalah secara bersama-sama</p>
+                <p>I Love You so muchh my sweetie Mellora ❤</p>
+                <p><strong>Kristian</strong> 🚀❤️</p>
+            </div>
+            <h2>Recap Bucin 2024</h2>
+            <div class="gallery">
+                <img src="1.jpg">
+                <img src="2.jpg">
+                <img src="3.jpg">
+                <img src="4.jpg">
+                <img src="5.jpg">
+                <img src="6.jpg">
+                <img src="7.jpg">
+                <img src="8.jpg">
+                <img src="9.jpg">
+                <img src="10.jpg">
+                <img src="11.jpg">
+                <img src="12.jpg">
+                <img src="13.jpg">
+                <img src="14.jpg">
+                <img src="15.jpg">
+                <img src="16.jpg">
+                <img src="17.jpg">
+                <img src="18.jpg">
+                <img src="19.jpg">
+                <img src="20.jpg">
+                <img src="21.jpg">
+                <img src="22.jpg">
+            </div>
+            
+            <audio id="romantic-audio" controls autoplay style="display:none;">
+                <source src="song.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <footer>
+            <p>(Kalau kamu baca ini sambil senyum-senyum, berarti aku berhasil! 😘)</p>
+        </footer>
+    </div>
+    <script>
+        function validateNames() {
+            const yourName = document.getElementById('yourName').value.trim();
+            const myName = document.getElementById('myName').value.trim();
+
+            const correctYourName = "Mellora Nessya Geraldine Herman";
+            const correctMyName = "Kristian Binsar Pardamean Pasaribu";
+
+            if (yourName === correctYourName && myName === correctMyName) {
+                document.getElementById('welcome-screen').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+                
+                // Mulai pemutaran lagu
+                document.getElementById('romantic-audio').play();
+            } else {
+                const errorMessage = document.getElementById('error-message');
+                errorMessage.style.display = 'block';
+                setTimeout(() => {
+                    errorMessage.style.display = 'none';
+                }, 3000);
+            }
+        }
+    </script>
+</body>
+</html>
